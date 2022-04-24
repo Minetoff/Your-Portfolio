@@ -1,0 +1,36 @@
+{% load static %}
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>YourPortfolio</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    </head>
+    <body>
+        <div id="main">
+            <nav id="up">
+                <ul>
+                    <li><a href="{% url 'home' %}" id="img"><img src="{% static 'img/logoza_ru.png' %}" alt="logo"></a></li>
+                    <li class="item"><a href="{% url 'home' %}" id="first">Главная</a></li>
+                    <li class="item"><a href="#info" id="second">О сервисе</a></li>
+                    <li class="item"><a href="#" id="third">Помощь</a></li>
+                    <li class="item"><a href="#footer" id="fourth">Контакты</a></li>
+                </ul>
+            </nav>
+            <section id="login">
+                <a id="one" href="{% url 'login' %}">Войти в систему</a><br>
+                <a id="two" href="{% url 'registration' %}">Зарегестрироваться в системе</a>
+            </section>
+            <article id="info">
+                <p>Сервис для хранения личных достижений в профиле, доступном работодателю/образовательной организации</p>
+                <img src="{% static 'img/img1.png' %}" alt="img1">
+            </article>
+            <footer id="footer">
+                <img src="{% static 'img/email.png' %}" alt="email" id="email">
+                <p id="email">lovygin2016@gmail.com</p>
+                <img src="{% static 'img/phone.png' %}" alt="phone" id="phone">
+                <p id="phone">+79220334273</p>
+            </footer>
+        </div>
+    </body>
+</html>

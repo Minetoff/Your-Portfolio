@@ -1,0 +1,23 @@
+{% load static %}
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/logreg.css' %}">
+</head>
+<body>
+    <div id="main">
+        <a href="{% url 'home' %}"><img src="{% static 'img/logoza_big.png' %}" alt="logo_big"></a>
+        <form action="" method="post">  <!-- Веб-форма -->
+            {% csrf_token %}
+            {{ form.as_p }}
+<!--            <input type="text" name="email" placeholder="Почта" id="email"><br> &lt;!&ndash; Ввод почты &ndash;&gt;-->
+<!--            <input type="password" name="password" placeholder="Пароль" id="password"><br> &lt;!&ndash; Ввод пароля &ndash;&gt;-->
+            <button type="submit" id="login"><b>Войти</b></button><br> <!-- Кнопка "Войти" -->
+        </form>
+        <a href="{% url 'registration' %}" id="go_reg">Нет аккаунта? Зарегистрируйся!</a>
+    </div>
+</body>
+</html>

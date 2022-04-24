@@ -1,0 +1,30 @@
+{% load static %}
+
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Add achievements</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/add_achievements.css' %}">
+</head>
+<body>
+    <div id="main">
+        <a href="{% url 'home' %}" id="logo"><img src="{% static 'img/logoza_ru.png' %}" alt="logo"></a>
+        <!-- Я не знаю, надо ли для бэкэнда куда-то это засовывать, поэтому засуну в <form> 
+             Если это мешает, могу убрать
+             Это штуки, где твой бэкэнд нужен -->
+        <form action="" method="POST">
+            <!-- А далее идет то, что я вообще хз как верстать, поэтому просто сделал как в дизайне -->
+            <div id="inp">
+                <input type="text" name="one" placeholder="Название достижения" class="elem"><br> <!-- Ввод почты -->
+                <input type="text" name="two" placeholder="Степень достижения" class="elem"><br> <!-- Ввод почты -->
+            </div>
+            <img src="" alt="Фото/Скан документа"><br>
+            <!-- Аналогично не знаю тип кнопки, поставил "submit" -->
+            <button type="submit" id="add"><b>Добавить</b></button><br>
+        </form>
+
+    </div>
+</body>
+</html>

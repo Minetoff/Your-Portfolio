@@ -1,0 +1,111 @@
+div#main{
+    width: 1440px;
+    margin: 0 auto;
+}
+a#logo img{
+    margin-top: 11px;
+    margin-left: 43px;
+    float: left;
+}
+button#close{
+    border: 0px solid white;
+    margin-top: 38px;
+    margin-left: 385px;
+    background: rgba(235, 86, 229, 0.67);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 33px;
+    width: 412px;
+    height: 53px;
+}
+button#close b{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #780F6E;
+    text-shadow: 0px 6px 7px rgba(0, 0, 0, 0.25);
+}
+img#foto{
+    min-width: 236px;
+    min-height: 306px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    margin-top: 210px;
+    margin-left: -402px;
+    float: left;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.22);
+}
+div#p{
+    margin-top: 212px;
+    margin-left: 535px;
+}
+p{
+    max-width: 743.02px;
+    border-bottom: 1px solid #000;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: black;
+}
+
+.vot {
+    font-size: 50px;
+    color: red;
+}
+input {
+  outline: none;
+  border: 0;
+  border-radius: 0;
+}
+p#two{
+    margin-top: 60px;  
+}
+p#three{
+    margin-top: 77px;  
+}
+p#four{
+    margin-top: 80px;  
+}
+
+
+
+button#add{
+    margin-top: 61px;
+    margin-left: 748px;
+    border: 0px solid white;
+    background-color: #FFF;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+button#a{
+    margin-top: 160px;
+    margin-left: 135px;
+    background-color: #FFF;
+    border: 0px solid white;
+    display:flex;
+}
+button#a b{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #DE20D6;
+    text-shadow: 0px 3px 3px rgba(235, 72, 228, 0.88);
+    display:inline-block;
+}
+button#a img{
+    margin-left:16px;
+}

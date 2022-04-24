@@ -1,0 +1,117 @@
+div#main{
+    width: 1440px;
+    margin: 0 auto;
+}
+img{
+    /* margin-top: 95px; */
+    margin-left: 361px;
+}
+input{
+    width: 616px;
+    height: 72px;
+    margin-left: 405px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: rgba(0, 0, 0, 0.22);
+    padding-left: 35px;
+}
+input#email{
+    margin-top: 85px;
+}
+input#password{
+    margin-top: 100px;
+}
+input#fio{
+    margin-top: 19px;
+}
+input.normal{
+    margin-top: 35px;
+}
+a{
+    text-decoration: none;
+}
+button#login{
+    /* border: 2px solid red; */
+    border: 0px solid white;
+    display: flex;
+    margin-top: 74px;
+    margin-left: 612px;
+    max-width: 216px;
+    max-height: 53px;
+    min-width: 216px;
+    min-height: 53px;
+    background: #EB56E5;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 33px;
+    /* align-items: center; */
+}
+button#login b{
+    margin-top: 12px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    text-shadow: 0px 6px 7px rgba(0, 0, 0, 0.25);
+    /* top: 784px; */
+    margin-left: 69px;
+    display: inline-block;
+}
+a#go_reg{
+    /* border: 2px solid green; */
+    margin-top: 25px;
+    margin-left: 610px;
+    width: 286px;
+    height: 31px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.54);
+}
+button#reg{
+    border: 0px solid white;
+    display: flex;
+    margin-top: 116px;
+    margin-left: 529px;
+    max-width: 382px;
+    max-height: 53px;
+    min-width: 382px;
+    min-height: 53px;
+    background: #EB56E5;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 33px;
+}
+button#reg b{
+    margin-top: 12px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    text-shadow: 0px 6px 7px rgba(0, 0, 0, 0.25);
+    margin-left: 90px;
+    display: inline-block;
+}
+a#go_log{
+    /* border: 2px solid green; */
+    margin-top: 25px;
+    margin-left: 600px;
+    width: 301px;
+    height: 31px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.54);
+}

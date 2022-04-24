@@ -1,0 +1,243 @@
+a{
+    text-decoration: none;
+}
+div#main{
+    width: 1440px;
+    margin: 0 auto;
+    /* border: 3px solid black; */
+}
+nav{
+    margin-top: 11px;
+    margin-left: 43px;
+    margin-right: 201px;
+}
+nav ul{
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+    display: flex;
+}
+nav li{
+    
+    display: inline;
+    align-items: center;
+}
+nav li.item{
+    margin-top: 39px;
+}
+nav a{
+    display: inline-block;
+
+    text-decoration: none;
+	text-align: center;
+	box-sizing: border-box;
+}
+nav a#img{
+    /* logoza 1 */
+
+    /* position: absolute; */
+    width: 492px;
+    height: 106px;
+    left: 43px;
+    top: 11px;
+    box-sizing: border-box;
+    background: url(logoza.png);
+
+
+}
+nav a#first{
+    position: static;
+    width: 108px;
+    height: 28px;
+    left: 0px;
+    top: 0px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-right: 73px;
+
+}
+nav a#second{
+    /* О сервисе */
+
+    position: static;
+    width: 145px;
+    height: 28px;
+    left: 181px;
+    top: 0px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    
+
+}
+nav a#third{
+    /* Помощь */
+
+    position: static;
+    width: 108px;
+    height: 28px;
+    left: 399px;
+    top: 0px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin-left: 73px;
+
+}
+nav a#fourth{
+    /* Контакты */
+
+    position: static;
+    width: 124px;
+    height: 28px;
+    left: 580px;
+    top: 0px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    margin-left: 73px;
+
+}
+section#login{
+    margin-top: 253px;
+    /* border: 2px solid red; */
+    text-align: center;  
+}
+section#login a#one{
+    /* position: absolute; */
+    width: 592px;
+    height: 121px;
+    /* left: calc(50% - 592px/2); */
+    /* top: calc(50% - 121px/2 - 797px); */
+    padding: 32px 121.5px;
+    box-sizing: border-box;
+    background: #EB55E5;
+    box-shadow: 0px 10px 20px rgba(210, 38, 225, 0.3);
+    border-radius: 45px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 49px;
+    margin: 0 auto;
+    color: #FFFFFF;
+    display: block;
+    text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+section#login a#two{
+    display:block;
+    margin: 0 auto;
+    margin-top: 48px;
+    /* width: 399px; */
+    /* height: 33px; */
+    left: 526px;
+    top: 572px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #000000;
+
+    text-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    /* border: 1px solid red; */
+}
+article#info{
+    margin-top: 444px;
+}
+article#info p{
+    margin-left: 135px;
+    width: 679px;
+    height: 198px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+    margin-right: 121px;
+    float: left;
+    margin-top: 56px;
+}
+article#info img{
+    background-color: #FFFFFF;
+}
+footer{
+    margin-top: 454px;
+    min-height: 594px;
+    background-color: rgba(210, 38, 225, 0.13);
+    text-align: center;
+}
+footer img#email{
+    margin-top: 99.56px;
+}
+footer p#email{
+    margin-top: 45.56px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    /* display: flex; */
+    align-items: center;
+    color: #000000;
+}
+footer img#phone{
+    margin-top: 49.88px;
+}
+footer p#phone{
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+}

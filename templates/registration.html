@@ -1,0 +1,39 @@
+{% load static %}
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/logreg.css' %}">
+</head>
+<body>
+    <div id="main">
+        <a href="{% url 'home' %}"><img src="{% static 'img/logoza_big.png' %}" alt="logo_big"></a>
+        <form method="POST">  <!-- Веб-форма -->
+            {% csrf_token %}
+            {{ form.as_p }}
+<!--            <input type="text" name="fio" placeholder="ФИО" id="fio"><br> &lt;!&ndash; ФИО &ndash;&gt;-->
+<!--            <input type="text" name="date" placeholder="ДД.ММ.ГГГГ" class="normal"><br> &lt;!&ndash; Дата рождения &ndash;&gt;-->
+<!--            <input type="text" name="email" placeholder="Почта" class="normal"><br> &lt;!&ndash; Почта &ndash;&gt;-->
+<!--            <input type="password" name="password" placeholder="Пароль" class="normal"><br> &lt;!&ndash; Пароль &ndash;&gt;-->
+            <button type="submit" id="reg"><b>Зарегистрироваться</b></button><br> <!-- Кнопка "Зарегистрироваться" -->
+        </form>
+
+        <a href="{% url 'login' %}" id="go_log">Есть аккаунт? Приступай ко входу!</a>
+        {% if messages %}
+        {% for message in messages %}
+            {% if message.tags == 'error' %}
+                <div class="alert alert-danger" role="alert">
+                    {{ message }}
+                </div>
+            {% else %}
+                <div class="alert alert-{{ message.tags }}" role="alert">
+                    {{ message }}
+                </div>
+            {% endif %}
+        {% endfor %}
+        {% endif %}
+    </div>
+</body>
+</html>

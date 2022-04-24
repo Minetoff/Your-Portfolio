@@ -1,0 +1,50 @@
+{% load static %}
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/profile.css' %}">
+</head>
+<body>
+    <div id="main">
+        <a href="{% url 'home' %}" id="logo"><img src="{% static 'img/logoza_ru.png' %}" alt="logo"></a>
+        <!-- Я не знаю, надо ли для бэкэнда куда-то это засовывать, поэтому засуну в <form> 
+             Если это мешает, могу убрать
+             Это штуки, где твой бэкэнд нужен -->
+        <form action="" method="">
+            <!-- Не знаю какой должен быть тип кнопки, поставил "submit", если что поправлю -->
+            <div id="button"><button type="submit" id="close"><b>Закрыть профиль</b></button></div><br> <!-- Кнопка "Закрыть профиль" -->
+            <img src="" alt="Фото" id="foto"> <!-- Здесь должно быть фото человека -->
+            <!-- А далее идет то, что я вообще хз как верстать, поэтому просто сделал как в дизайне -->
+            <div id="p">
+                <p id="one">{{ user.username }}</p>
+                <p id="two"><input type="text" name="date" placeholder="ДД.ММ.ГГГГ" class="normal"><br></p>
+                <p id="three"><input type="text" name="fio" placeholder="Ссылка на соц. сети" id="soty"><br></p>
+                <p id="four"><input type="text" name="fio" placeholder="О себе" id="info"><br></p>
+            </div>
+        </form>
+        <!-- Аналогично не знаю тип кнопки, поставил "submit" -->
+        <button type="submit" id="add"><a href="{% url 'achieve' %}"> + Добавить достижения</a></button><br>
+        <button type="submit" id="a"><b>Поделиться ссылкой на свои достижения</b><img src="{% static 'img/link.png' %}" atr="link" id="link"></button><br>
+        {% for item in achievements %}
+            <div class="vot">
+                <ul>
+                    <li>
+                        <h1>{{ item.name }}</h1>
+                    </li>
+                    <li>
+                        <h2>{{ item.stepen }}</h2>
+                    </li>
+                    <li>
+                        <h2>{{ item.photo }}</h2>
+                    </li>
+
+                </ul>
+            </div>
+        {% endfor %}
+        <h3><a href="{% url 'logout' %}">Log out</a></h3>
+    </div>
+</body>
+</html>
